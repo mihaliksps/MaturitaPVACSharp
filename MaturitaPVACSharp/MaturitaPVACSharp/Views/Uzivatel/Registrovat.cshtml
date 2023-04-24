@@ -1,0 +1,15 @@
+﻿@{
+    Layout = "_Layout";
+
+    ViewData["Title"] = "Registrace";
+}
+
+<form method="post" action="/Uzivatel/Registrovat">
+    <input type="text" name="jmeno" placeholder="Jméno.." /><br />
+    <input type="password" name="heslo" placeholder="Heslo.." /><br />
+    <input type="password" name="heslo_kontrola" placeholder="Kontrolni heslo.." /><br />
+    <input type="submit" value="Registrovat se" /><br />
+</form>
+
+<a href="/Uzivatel/Prihlasit">Přihlásit se</a>
+<a href="/Home/Index">Domů</a>

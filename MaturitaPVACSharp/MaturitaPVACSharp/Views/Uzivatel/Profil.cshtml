@@ -1,0 +1,11 @@
+﻿@model MaturitaPVACSharp.Models.Uzivatel
+@{
+    Layout = "_Layout";
+
+    ViewData["Title"] = "Profil";
+}
+
+<h1>Vítej, <b>@Model.Jmeno</b>!</h1>
+<a href="/Uzivatel/Odhlasit">Odhlásit se</a>
+<a href="/Clanek/Pridat">Přidat článek</a>
+<a href="/Clanek/Vsechny">Moje články</a>
