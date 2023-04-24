@@ -11,7 +11,7 @@ namespace MaturitaPVACSharp.Models
         public string Jmeno { get; set; }
         [Required]
         public string Heslo { get; set; }
-        //[Required]
-        //virtual public List<Clanek> Clanky { get; set; }
+        [Required]
+        virtual public List<Clanek> Clanky { get; set; }
     }
 }

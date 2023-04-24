@@ -1,0 +1,13 @@
+﻿@model MaturitaPVACSharp.Models.Clanek
+@{
+    Layout = "_Layout";
+
+    ViewData["Title"] = "Detail článku";
+}
+
+<p><b>@Model.Nadpis</b> @Model.Autor.Jmeno</p>
+<p>@Model.Datum</p>
+<p>@Model.Telo</p>
+
+<a href="/Uzivatel/Profil">Zpět na profil</a>
+<a href="/Clanek/Vsechny">Všechny články</a>

@@ -1,0 +1,19 @@
+﻿@model List<MaturitaPVACSharp.Models.Clanek>
+@{
+    Layout = "_Layout";
+
+    ViewData["Title"] = "Všechny články";
+}
+
+@if (Model != null && Model.Count > 0)
+{
+    @foreach (MaturitaPVACSharp.Models.Clanek clanek in Model)
+    {
+        @:<p><b>@clanek.Nadpis</b> @clanek.Autor.Jmeno <a href="/Clanek/Detail/@clanek.Id">Detail</a></p>
+        @:<p>@clanek.Datum</p>
+        @:<p>@clanek.Telo</p>
+        <hr />
+    }
+}
+
+<a href="/Uzivatel/Profil">Zpět na profil</a>

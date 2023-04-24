@@ -1,0 +1,12 @@
+﻿@{
+    Layout = "_Layout";
+
+    ViewData["Title"] = "Přidat článek";
+}
+
+<form method="post" action="/Clanek/Pridat">
+    <input type="text" name="Nadpis" placeholder="Nadpis" /><br />
+    <textarea name="telo" placeholder="Tělo článku..."></textarea><br />
+    <input type="submit" value="Přidat článek" /><br />
+</form>
+<a href="/Uzivatel/Profil">Zpět na profil</a>

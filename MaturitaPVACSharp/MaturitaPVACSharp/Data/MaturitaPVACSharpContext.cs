@@ -9,13 +9,13 @@ namespace MaturitaPVACSharp.Data
         public MaturitaPVACSharpContext(DbContextOptions<MaturitaPVACSharpContext> options) : base(options) { }
 
         public DbSet<Uzivatel> Uzivatele { get; set; }
-        //public DbSet<Clanek> Clanky { get; set; }
+        public DbSet<Clanek> Clanky { get; set; }
 
-        //protected override void OnModelCreating(ModelBuilder builder)
-        //{
-        //    builder.Entity<Clanek>()
-        //        .HasOne(c => c.Autor)
-        //        .WithMany(a => a.Clanky);
-        //}
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Entity<Clanek>()
+                .HasOne(c => c.Autor)
+                .WithMany(a => a.Clanky);
+        }
     }
 }
